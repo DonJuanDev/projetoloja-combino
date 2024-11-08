@@ -1,0 +1,165 @@
+/* Reset e Estilos Gerais */
+body {
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Cabeçalho */
+
+
+.cabeçalhologin {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.fotocabeçalho {
+    display: flex;
+    width: 170px;
+}
+
+
+.back-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Coloca o botão à esquerda */
+    display: flex;
+    justify-content: center;
+}
+
+.back-btn {
+    padding: 14px 25px;
+    background-color: white; /* Cor de fundo chamativa */
+    color: black; /* Cor do texto */
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: #ff9800; /* Cor vibrante ao passar o mouse */
+    transform: translateY(-5px); /* Leve elevação do botão */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+}
+
+.back-btn:active {
+    transform: translateY(2px); /* Efeito de "pressionar" ao clicar */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave ao pressionar */
+}
+/* Container de Login */
+.login-container {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 60px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+    transition: transform 0.3s;
+
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+}
+
+/* Título e Subtítulo */
+.login-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Campos de Entrada */
+.login-container form label {
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+.login-container form input {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.login-container form input:focus {
+    border-color: #333;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Botão de Entrar */
+.login-container button {
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+/* Link de Cadastro */
+.signup-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #0056cc;
+}

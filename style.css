@@ -1,0 +1,405 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cabeçalho {
+    background-color: #000;
+}
+
+.fotocabeçalho {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+}
+
+.haha {
+    border: 1px solid red;
+    color: white;
+    margin-left: 1630px;
+    font-size: 40px;
+}
+
+.cart-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.cart-btn {
+    padding: 14px 25px;
+    background-color: white; /* Cor de fundo chamativa */
+    color: black; /* Cor do texto */
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 10px;
+}
+
+.cart-btn:hover {
+    background-color: #ff9800; /* Cor vibrante ao passar o mouse */
+    transform: translateY(-5px); /* Leve elevação do botão */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+}
+
+.cart-btn:active {
+    transform: translateY(2px); /* Efeito de "pressionar" ao clicar */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave ao pressionar */
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.products-section {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.products-container {
+    max-width: 1200px;
+}
+
+.products-section {
+    padding: 80px 20px;
+    color: black;
+    text-align: center;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-container h2::after {
+    content: "";
+    position: absolute;
+    width: 60%; /* Ajustando a largura da linha */
+    height: 4px;
+    background-color: white;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centralizando a linha */
+    border-radius: 10px;
+}
+
+.products-container h2::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    bottom: -10px;
+    border-radius: 50px;
+}
+
+.products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.product-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #ff5722;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buy-btn {
+    padding: 14px 30px;
+    background-color: #ffeb3b;
+    color: #333;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ff9800;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+footer {
+    color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(145deg, #6a11cb, #2575fc); /* Gradiente sofisticado */
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin: 50px auto;
+    transition: all 0.5s ease;
+  }
+  
+  /* Efeito de flutuação ao passar o mouse */
+  .footer-container:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+  
+  /* Estilo para cada seção do footer */
+  .footer-section {
+    margin-bottom: 30px;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 320px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efeito de hover nas seções */
+  .footer-section:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-section h3 {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px; /* Maior espaço para a linha */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section h3::after {
+    content: "";
+    position: absolute;
+    width: 100%; /* Linha do mesmo tamanho do título */
+    height: 4px;
+    background-color: #ffeb3b;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+  }
+  
+  .footer-section h3:hover::after {
+    opacity: 1;
+    width: 100%;
+  }
+  
+  .footer-section p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #ddd;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section:hover p {
+    color: #ffeb3b;
+  }
+  
+  /* Seção de Redes Sociais */
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil */
+    transition: all 0.3s ease;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .social-icon img {
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+  }
+  
+  .social-icon:hover {
+    background-color: #ffeb3b;
+    color: #1a2a6c;
+    transform: scale(1.2);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo do crédito do footer */
+  .footer-credit {
+    margin-top: 60px;
+    font-size: 1.2em;
+    color: #ddd;
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-credit:hover {
+    color: #ffeb3b;
+    cursor: pointer;
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .footer-container {
+      padding: 40px 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .social-links {
+      gap: 20px;
+    }
+  
+    .social-icon {
+      font-size: 2.5em;
+      width: 70px;
+      height: 70px;
+    }
+  
+    .footer-credit {
+      font-size: 1em;
+      padding-top: 15px;
+    }
+  }
+
+  .instabino {
+    font-size: 55px;
+  }
+
+  .instajuan {
+    font-size: 55px;
+  }
+
+  .auth-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .create-account-btn {
+  padding: 14px 25px;
+  background-color: white; /* Cor de fundo chamativa */
+  color: black; /* Cor do texto */
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px; /* Bordas arredondadas */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 10px;
+}
+
+.auth-buttons .login-btn {
+    background-color: white; /* Azul para Login */
+}
+
+.auth-buttons .create-account-btn {
+    background-color: white; /* Verde para Criar Conta */
+}
+
+.auth-buttons .login-btn:hover {
+  background-color: #ff9800; /* Cor vibrante ao passar o mouse */
+  transform: translateY(-5px); /* Leve elevação do botão */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.auth-buttons .create-account-btn:hover {
+  background-color: #ff9800; /* Cor vibrante ao passar o mouse */
+  transform: translateY(-5px); /* Leve elevação do botão */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+

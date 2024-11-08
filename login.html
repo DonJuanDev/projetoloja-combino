@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="cabeçalhologin">
+            <!-- Botão Voltar dentro do Cabeçalho -->
+            <div class="back-btn-container">
+                <a href="index.html">
+                    <button class="back-btn">Voltar</button>
+                </a>
+            </div>
+
+            <!-- Logo Centralizado -->
+            <div class="logo-container">
+                <img src="./assets/image-removebg-preview (1).png" class="fotocabeçalho">
+            </div>
+        </div>
+    </header>
+
+    <!-- Container de Login -->
+    <div class="login-container">
+        <h2>Bem-vindo</h2>
+        <p class="subtitle">Faça login para continuar</p>
+        <form action="pagina_principal.html" method="post">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p class="signup-link">Ainda não possui uma conta? <a href="signup.html">Cadastre-se</a></p>
+    </div>
+</body>
+</html>

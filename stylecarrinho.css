@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabeçalhocarrinho {
+    background-color: #000;
+}
+
+.fotocabeçalho {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+}
+
+.listas {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajuste para espaçamento proporcional */
+    list-style-type: decimal;
+    padding: 0;
+    margin: 20px auto;
+    width: 90%; /* Usa uma largura responsiva */
+    max-width: 600px; /* Limita a largura máxima */
+    border-radius: 10px;
+    height: 50px;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.textoabaixolistas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%; /* Usa uma largura responsiva */
+    max-width: 581px; /* Limita a largura máxima */
+    height: auto;
+    padding: 10px; /* Adiciona padding para melhorar a legibilidade */
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.descontoverde {
+    color: green;
+}
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.back-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-btn {
+    padding: 14px 25px;
+    background-color: white; /* Cor de fundo chamativa */
+    color: black; /* Cor do texto */
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: #ff9800; /* Cor vibrante ao passar o mouse */
+    transform: translateY(-5px); /* Leve elevação do botão */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra maior ao passar o mouse */
+}
+
+.back-btn:active {
+    transform: translateY(2px); /* Efeito de "pressionar" ao clicar */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave ao pressionar */
+}
