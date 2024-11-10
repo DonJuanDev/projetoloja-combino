@@ -1,0 +1,151 @@
+/* Reset e Estilos Gerais */
+body {
+    align-items: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cabeçalho */
+.cabeçalho-criar {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.fotocabeçalho {
+    display: flex;
+    width: 170px;
+}
+
+.back-btn-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.back-btn {
+    padding: 14px 25px;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.back-btn:hover {
+    background-color: #ff9800;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.back-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Container de Criação de Conta */
+.criar-container {
+    margin: auto;
+    max-width: 450px;
+    padding: 10px;
+    border-radius: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+    transition: transform 0.3s;
+}
+
+.criar-container:hover {
+    transform: scale(1.02);
+}
+
+/* Título e Subtítulo */
+.criar-container h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+.criar-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.criar-container form label {
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    font-weight: 500;
+}
+
+.criar-container form input {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fafafa;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.criar-container form input:focus {
+    border-color: #333;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Botão de Cadastrar */
+.criar-container button {
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.criar-container button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Link para Login */
+.login-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #666;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.login-link a:hover {
+    color: #0056cc;
+}
